@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slider.css' %}">
+
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="main-nav flex">
+              <a href="#">
+                <img src="{% static 'images/asset 0.svg' %}" alt="TCS Logo" />
+              </a>
+    
+              <div class="nav-links">
+                <ul class="flex">
+                  <a href="#"><li>What we do</li></a>
+                  <a href="#"><li>What we are</li></a>
+                  <a href="#"><li>Insights</li></a>
+                  <a href="#"><li>Careeers</li></a>
+                  <a href="#"><li>Newsroom</li></a>
+                  <a href="#"><li>Investors</li></a>
+                </ul>
+              </div>
+    
+              <div class="second-nav-links">
+                <ul class="flex">
+                  <a href="#"><li>Contact Us</li></a>
+                  <a href="#"><li>TCS Worldwide</li></a>
+                </ul>
+              </div>
+    
+              <div class="serach-icon">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+              </div>
+    
+              <a href="#">
+                <img src="{% static 'images/asset 1.svg' %}" alt="Tata logo" />
+              </a>
+    
+              <a href="#" class="toggle-btn"><i class="fa-solid fa-bars"></i></a>
+            </div> 
+          </nav> 
+
+         
+    </header>
+
+{% block content %}
+hiiiii
+{% endblock %}
+
+<script src="{% static 'js/app.js' %}"></script>
+</body>
+</html>
