@@ -9,7 +9,6 @@
 
 .slider{
     height: auto;
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,17 +21,19 @@
     width: 80vw;
     height: 80vh;
     margin-top: 70px;
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
+   
    
 }
+
 
 .carousel .list .item{
     
     position: absolute;
     top: 90%;
     transform: translateY(-100%);
-    left: 100%;
+    left: -100%;
     border-radius: 20px;
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
     background-position: 50% 50%;
@@ -54,18 +55,16 @@
 }
 
 .carousel .list .item:nth-child(3){
-    left: 67%;
+    left: 100%;
 }
 
 .carousel .list .item:nth-child(4){
-    left: calc(67% + 200px);
+    left: calc(200%);
 }
 
 .carousel .list .item:nth-child(5){
-    left: calc(67% + 400px);
+    left: calc(300%);
 }
-
-
 
 
 
@@ -76,7 +75,6 @@
     top: 30%;
     left: 30px;
     transform: translateY(-50%);
-    width: vw;
     text-align: left;
     color: #fff;
     display: none;
@@ -92,9 +90,7 @@
     text-transform: uppercase;
     color: #f8fffb;
     /* font-weight: bold; */
-    line-height: 1;
-
-   
+    line-height: 1; 
 }
 
 /* .content .name{
@@ -178,25 +174,28 @@
 
 .arrows{
     position: absolute;
-    top: 80%;
-    right: 52%;
+    top: 75%;
+    right: 2%;
     z-index: 100;
-    width: 300px;
+    width: 100px;
+    height: 100px;
     max-width: 30%;
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     align-items: center;
+   
 }
 
 .arrows button{
     width: 50px;
     height: 50px;
+    background: none;
     border-radius: 50%;
-    background-color: #14ff72cb;
     color: #fff;
     border: none;
     outline: none;
-    font-size: 16px;
+    font-size: 25px;
     font-family: monospace;
     font-weight: bold;
     transition: .5s;
@@ -204,8 +203,8 @@
 }
 
 .arrows button:hover{
-    background: #fff;
-    color: #000;
+    /* background: #fff; */
+    color: #d4cece;
 }
 
 
@@ -216,9 +215,9 @@
     width: 0%;
     bottom: 0;
     height: 4px;
-    background-color: #14ff72cb;
+    background-color: #007bff;
     
-    animation: runningTime 7s linear 1 forwards;
+    animation: runningTime 5s linear 1 forwards;
 }
 
 @keyframes runningTime {
