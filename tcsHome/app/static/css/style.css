@@ -166,7 +166,6 @@
     background-size: cover;
   }
   
-  
   .business-card-wrap:nth-child(3) .business-card{
     background: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.8)),
       url(../images/asset\ 10.jpeg);
@@ -212,6 +211,7 @@
     position: relative;
 
   }
+
   .read-box{
     height: 35px;
     transition: 1s;
@@ -225,13 +225,7 @@
     border: 1.5px solid #2469bc;
     /* text-decoration: underline 3px #2469bc ; */
   }
-
-
-
-
-
-
-
+  
   .container {
     max-width: 90%;
     margin-inline: auto;
@@ -262,6 +256,7 @@
 .industry-container{
   height: auto;
  background-color: white;
+ padding: 50px;
 }
 
 .blocks{
@@ -277,8 +272,9 @@
   flex-direction: row;
   justify-content:space-between;
   align-items: center;
+  position: relative;
   margin-right: 20px;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid rgb(220, 220, 220);
 }
 .block:hover{
   border-bottom: 1px solid rgb(18, 17, 17);
@@ -292,8 +288,16 @@
 .block-border{
   border: 1px solid gray;
 }
-
-
+.block .myarrow{
+  position: absolute;
+  right: 30px;
+  transition: 0.4s;
+  opacity: 0;
+}
+.block:hover .myarrow{
+  opacity: 1;
+  right: 10px;
+}
 
 
   @media screen and (max-width: 900px) {
