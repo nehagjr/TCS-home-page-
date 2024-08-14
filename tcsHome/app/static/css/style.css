@@ -258,7 +258,40 @@
     margin-bottom: 15px;
   }
   
+  /* industry contaoner */
+.industry-container{
+  height: auto;
+ background-color: white;
+}
 
+.blocks{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.block{
+  width: 40vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  margin-right: 20px;
+  border-bottom: 1px solid gray;
+}
+.block:hover{
+  border-bottom: 1px solid rgb(18, 17, 17);
+}
+.block-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.block-border{
+  border: 1px solid gray;
+}
 
 
 
